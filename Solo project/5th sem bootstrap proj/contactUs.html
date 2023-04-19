@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact_us</title>
+    <script src="https://kit.fontawesome.com/55ef1e9c67.js" crossorigin="anonymous"></script>
+    <!-- css part internal -->
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;  
+            margin: 0px; 
+        }
+        #form1::before {
+            content: "";
+            background: url('contact_us_bg2.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        #heading {
+            /* color: rgb(194, 209, 142); */
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 100px;
+        }
+        form {
+            text-align: center;
+        }
+        form .name {
+            /* color: rgb(194, 209, 142); */
+            text-align: left;
+            margin-left: 22rem;
+        }
+        form .item {
+            width: 50rem;
+            height: 1.5rem;
+            border-radius: 7px;
+        }
+        form .item:hover {
+            zoom: 101%; 
+        }
+        form button {
+            padding: 20px;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 10px;
+            margin-top: 30px;
+            width: 100px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        form button:hover {
+            zoom: 105%;
+        }
+    </style>
+</head>
+<body>
+    <section id="form1">
+        <p id="heading">Contact Us</p>
+        <form>
+            <p class="name">Name: </p>
+            <input type="text" placeholder="Enter your name" class="item" required>
+            <p class="name">Email: </p>
+            <input type="email" placeholder="Enter your email" class="item" required>
+            <p class="name">Ph-number: </p>
+            <input type="number" placeholder="Enter your Phone-number" class="item" required>
+            <p class="name" style="color: white;">Message: </p>
+            <textarea style="height: 4rem;"placeholder="Enter your message here" class="item" required></textarea> <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

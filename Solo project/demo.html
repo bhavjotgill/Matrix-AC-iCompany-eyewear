@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Page</title>
+    <script src="https://kit.fontawesome.com/55ef1e9c67.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            /* align-items: center; */
+            background: url(demo_bg.webp) no-repeat center center/cover;
+            margin: 0px;
+        }
+        /* Navbar */
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+        }
+
+        #logo img {
+            height: 50%;
+            width: 10%;
+            margin-left: 12px;
+        }
+        #navbar ul {
+            display: flex;
+        }
+        #navbar #logo img {
+            width: 140px;
+        }
+        #navbar::before {
+            content: "";
+            /* background-color: red; */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a {
+            color: black;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;  /*remove underlines from li...... */
+            cursor: pointer;
+        }
+        #navbar ul li a:hover{
+            color: white;
+            background-color: rgb(10, 9, 9);
+            
+        }
+        #navbar #search {
+            position: relative;
+            border-radius: 50px;
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            width: 219px;
+            margin-left: 125px;
+        }
+        #navbar #search input {
+            border-style: hidden;
+            text-align: center;
+            width: 155px;
+            color: chartreuse;
+            background-color: black;
+        }
+
+        #navbar #search input:focus{
+            outline: none;
+        }
+        #navbar #search input::placeholder {
+            color: white;
+        }
+
+        /*Font awesome icon search and mic*/
+        #navbar #search #searchIcon {
+            color: white;
+        }
+        #navbar #search #micIcon {
+            color: white;
+        }
+
+        #right-bt{
+            position: relative;
+            margin-left: 80px;
+        }
+        /* */
+        h1 {
+            color: rgb(58, 58, 176);
+            font-size: 4rem;
+            text-align: center;
+            margin-top: 80px;
+        }
+        #abc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        span {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Matrix-logo.png" alt="logo image here!">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="index.html #clients">Clients</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-microphone" id="micIcon"></i>
+        </div>
+
+        <ul id="right-bt">
+            <!-- <li><a href=""></a></li> -->
+            <li><a href="5th sem bootstrap proj/index.html">Website</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="signup"><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <h1>Demo Page</h1>
+    <center>
+        <iframe width="800" height="400" src="https://www.youtube.com/embed/dxAOclK0R5A" title="Don't Buy AC Before Watching This Video !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    <div id ="abc">
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/UO-mn-zbxAk" title="Top 5 best AC in India 2022 | AC buying guide India 2022  🔥🔥" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <span></span>
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/FvBWNj0LSn4" title="Daikin AC vs LG AC 2022 Comparison (Latest 2022 Updated)⚡LG vs Daikin AC 2022⚡Which One To Buy??" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>

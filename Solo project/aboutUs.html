@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/55ef1e9c67.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+        }
+        /* Navbar */
+        #navbar {
+            display: flex;
+            align-items: center;
+            /* position: relative; */
+            position: sticky;
+            background-color: white;
+            top: 0px;
+        }
+
+        #logo img {
+            height: 50%;
+            width: 10%;
+            margin-left: 12px;
+        }
+        #navbar ul {
+            display: flex;
+        }
+        #navbar #logo img {
+            width: 140px;
+        }
+        #navbar::before {
+            content: "";
+            /* background-color: red; */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a {
+            color: black;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;  /*remove underlines from li...... */
+            cursor: pointer;
+        }
+        #navbar ul li a:hover{
+            color: white;
+            background-color: rgb(10, 9, 9);
+            
+        }
+        #navbar #search {
+            position: relative;
+            border-radius: 50px;
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            width: 219px;
+            margin-left: 125px;
+        }
+        #navbar #search input {
+            border-style: hidden;
+            text-align: center;
+            width: 155px;
+            color: chartreuse;
+            background-color: black;
+        }
+
+        #navbar #search input:focus{
+            outline: none;
+        }
+        #navbar #search input::placeholder {
+            color: white;
+        }
+
+        /*Font awesome icon search and mic*/
+        #navbar #search #searchIcon {
+            color: white;
+        }
+        #navbar #search #micIcon {
+            color: white;
+        }
+
+        #right-bt{
+            position: relative;
+            margin-left: 110px;
+        }
+
+        /* Home Section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            /* border-left: 10px solid red; */
+            /* align-items: center; */
+        }
+        #home::before {
+            content: "";
+            background: url('aboutuspics/building.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 60%;
+            width: 100%;
+            top: 75px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        #home p {
+            color: white;
+            font-size: 1.6rem;
+            margin-left: 270px;
+            margin-top: 270px;
+            margin-bottom: 0px;
+            /* text-decoration: ; */
+        }
+        #home h1 {
+            color: white;
+            font-size: 4rem;
+            margin-left: 270px;
+            margin-top: -15px;
+        }
+
+        /* Info section */
+        #info #head {
+            text-align: center;
+            font-size: 2.31rem;
+            margin-top: 100px;
+
+        }
+        #info #basic {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-top: -20px;
+            margin-left: 250px;
+            margin-right: 250px;
+
+        }
+
+        #intro {
+            display: flex;
+            margin-top: 100px;
+            margin-left: 190px;
+            margin-right: 190px;
+        }
+        #intro .CEO_note {
+            margin-right: 15px;
+            font-size: 1rem;
+        }
+        #intro .CEO_pic {
+            position: relative;
+            margin-left: 15px;
+            border-top: 14px solid #ed1b2e;
+            border-right: 14px solid #ed1b2e;
+            z-index: -1;
+        }
+        #intro .CEO_pic:after {
+            content: "";
+            width:20%;
+            height:15px;
+            background-color:white;
+            position: absolute;
+            left:-1px;
+            top:-15px;
+        }
+        #intro .CEO_pic:before {
+            content: "";
+            height: 50%;
+            width: 15px;
+            background-color: white;
+            position: absolute;
+            right: -15px;
+            bottom: -1px;
+        }
+
+        #intro .CEO_pic img{
+            margin-right: -1px;
+            width: 350px;
+            height: 350px;
+        }
+
+        #Sec_Intro {
+            display: flex;
+            margin-top: 100px;
+            margin-left: 190px;
+            margin-right: 190px;
+        }
+        #Sec_Intro .intro_pic {
+            position: relative;
+            margin-right: 35px;
+            border-top: 14px solid #ed1b2e;
+            border-left: 14px solid #ed1b2e;
+            z-index: -1;
+        }
+        #Sec_Intro .intro_pic:after {
+            content: "";
+            width:20%;
+            height:15px;
+            background-color:white;
+            position: absolute;
+            right:-1px;
+            top:-15px;
+            bottom: -20px;
+        }
+        #Sec_Intro .intro_pic:before {
+            content: "";
+            height: 50%;
+            width: 15px;
+            background-color: white;
+            position: absolute;
+            left: -15px;
+            bottom: -1px;
+        }
+
+        #Sec_Intro .intro_pic img{
+            width: 350px;
+            height: 350px;
+        }
+        #Sec_Intro .intro_note {
+            margin-top: 90px;
+            margin-left: 35px;
+            font-size: 1rem;
+
+        }
+
+        /* Details Section */
+        #details {
+            margin-top: 100px;
+        }
+        #details h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        #details p {
+            margin-top: -10px;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+        #details #detail-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        #details #detail-box .detail-card {
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid rgba(0,0,0,.125);
+            width: 310px;
+            height: 165px;
+        }
+        #details #detail-box .detail-card:hover {
+            color: white;
+            background-color: #ed1b2e;
+        }
+        #details #detail-box .detail-card i {
+            font-size: 6rem;
+        }
+        #details #detail-box .detail-card .top {
+            /* font-size: 6rem; */
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        #details #detail-box .detail-card p {
+            margin-top: -15px;
+            font-weight: 100;
+        }
+
+
+        /* Footer Section */
+        #footer {
+            color: white;
+            background: #313030;
+            /* font-family: 'Baloo Bhai 2', cursive; */
+        }
+        #footer p {
+            margin-left: 40px;
+        }
+        #footer ul li {
+            list-style: none;
+        }
+        #footer ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #footer #flaw {
+            justify-content: center;
+            display: flex;
+        }
+        #footer #flaw .abc {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        #footer a:hover{
+            color: chartreuse;
+        }
+        /* #footer i:hover{
+            color: skyblue;
+        } */
+        #footer .abc i {
+            font-size: 1.3rem;
+            padding: 4px; 
+        }
+        #footer .abc i:hover {
+            color: #de0022;
+            cursor: pointer;
+        }
+        #footer hr {
+            background-color: white;
+            margin: 20px;
+        }
+
+        #footer #c_ryt {
+            text-align: center;
+            /* margin-bottom: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Matrix-logo.png" alt="logo image here!">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="5th sem bootstrap proj/index.html">Website</a></li>
+            <li><a href="index.html #clients">Clients</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-microphone" id="micIcon"></i>
+        </div>
+
+        <ul id="right-bt">
+            <li><a href="demo.html">Demo</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="signup"><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <i><p> About</p></i>
+        <h1>Company</h1>
+    </section>
+
+    <section id="info">
+        <h1 id="head">Matrix Electronic India Pvt Ltd.</h1>
+        <p id="basic">In 1998, Matrix Electronic Corporation opened its first interaction office in New Delhi. Since then, we are working to create a difference through our products, technology and of course services.</p>
+
+        <div id="intro">
+            <div class="CEO_note">
+                <p>
+                    Welcome to Matrix Electronic India, your number one source for all electronics items especially Air Conditioners. We're dedicated to giving you the very best of AC, with a focus on mainly three characteristics, ie. being dependability, good customer service and lastly uniqueness. <br> <br>
+                    Founded in 1990 by Bhavjot Gill, Matrix Hut(our first store) has come a long way from its beginnings in New Delhi. When Mr. Gill first started out, his passion for making a different and easy evironment providing the best equipment for his customers which drove him to do intense research, follow his passion, even quitting his day job, and gave him the impetus to turn hard work and inspiration into to a booming online store. We now serve customers all over India, and are thrilled to be a part of the upcoming new projects which give rise in the Electronic industry. <br> <br>
+
+                    We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us. <br> <br>
+
+                    Sincerely, <br>
+                    &nbsp;&nbsp;&nbsp; Bhavjot Singh Gill [CEO, Founder.]
+                </p>
+
+            </div>
+            <div class="CEO_pic">
+                <img src="aboutuspics/CEO1.jpeg" alt="CEO_pic">
+            </div>
+        </div>
+
+        <div id="Sec_Intro">
+            <div class="intro_pic">
+                <img src="aboutuspics/2nd pic building.jpg" alt="Intro/Building_pic">
+            </div>
+
+            <div class="intro_note">
+                <p>
+                    Matrix Electronic India has grown to become a company offering a wide range of innovative and high-quality products for the Indian market. This includes products and solutions for Air Conditioners, Factory Automation and Industrial Systems, Semiconductor & Devices, Transportation Systems and Visual & Imaging. <br> <br>
+
+                    The company was incorporated in the year 2010. Since then, we are consistently working to create a difference through our products
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <h1>Head Office</h1>
+        <p>1st Floor, DLF Urban Estate Phase -II, City Center Building-B,<br> New Delhi-110005, India</p>
+
+        <center>
+            <div id="detail-box">
+                <div class="detail-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="top">Phone:</p>
+                    <p>1800(539)84-290</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="top">Email:</p>
+                    <p>matrix_electronic@gmail.com</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-fax"></i>
+                    <p class="top">Fax:</p>
+                    <p>1800(539)84-290</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="top">CIN No:</p>
+                    <p>K7549DU295AK5911</p>
+                </div>
+            </div>
+        </center>
+    </section>
+
+
+    <footer id="footer">
+        <div id="flaw">
+            <div class="abc">
+                <p>QUICK LINKS</p>
+                <ul>
+                    <li><a href="index.html">> Home</a></li>
+                    <li><a href="aboutUs.html">> About Us</a></li>
+                    <li><a href="#clients">> Clients</a></li>
+                    <li><a href="contactUs.html">> Contact Us</a></li>
+                    <li><a href="demo.html">> Demo</a></li>
+                    <li><a href="5th sem bootstrap proj/index.html">> Website</a></li>
+                </ul>
+            </div>
+            <div class="abc">
+                <p>FOLLOW US..</p>
+                <ul type="none">
+                    <i class="fa-brands fa-facebook" onclick="mainPageFb()"></i>
+                    <i class="fa-brands fa-youtube onclick" onclick="mainPageYt()"></i>
+                    <i class="fa-brands fa-linkedin" onclick="mainPageLI()"></i>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <div id="c_ryt">Copyright &copy; www.matrix.com. All rights reserved!</div>
+    </footer>
+</body>
+</html>

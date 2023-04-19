@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .half-a-border-on-top {
+            border-top:1px solid black;
+            position: relative;
+            }
+            .half-a-border-on-top:after {
+            padding:0;margin:0;display:block;
+            content: "";
+            width:20%;
+            height:1.1px;
+            background-color:white;
+            position: absolute;
+            right:0;
+            top:10px;
+            }
+    </style>
+</head>
+<body>
+    <span class="half-a-border-on-top">Hello world!</span>
+</body>
+</html>

@@ -1,0 +1,207 @@
+body {
+    margin: 0px;
+}
+
+/* for hover dropdown */
+@media all and (min-width: 992px) {
+.navbar .nav-item .dropdown-menu{ display: none; }
+/* .navbar .nav-item:hover .nav-link{   } */
+.navbar .nav-item:hover .dropdown-menu{ display: block; }
+.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+nav .navbar-brand {
+    font-size: 1.3rem;
+}
+nav #navbarSupportedContent ul li a {
+    font-size: 1.09rem;
+}
+nav div i {
+    font-size: 1.19rem;
+    cursor: pointer;;
+}
+nav .col-sm-2 .modal-header {
+    border-bottom: 0 none;
+}
+/* .modal-footer {
+    border-top: 0 none;
+} */
+nav .col-sm-2 .modal-body {
+    align-items: center;
+    justify-content: center;
+    
+}
+nav .col-sm-2 .modal-body input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 350px;
+    /* padding: 0px 50px; */
+}
+nav .col-sm-2 .modal-body input:focus {
+    outline: none;
+}
+nav .col-sm-2 .modal-body input::placeholder {
+    /* text-align: center; */
+}
+nav .col-sm-2 .modal-body button {
+    /* padding: 10px; */
+    background-color: white;
+    color: rgb(32, 31, 31);
+    border: 1px solid rgb(32, 31, 31);
+    border-radius: 100px;
+    width: 180px;
+    height: 30px;
+}
+nav .col-sm-2 .modal-body button:hover {
+    background-color: rgb(32, 31, 31);
+    color: white;
+}
+
+/* Strip section */
+#strip {
+    background-color: black;
+    height: 27px;
+}
+#strip p {
+    text-align: center;
+    color: white;
+}
+
+/* explore tab */
+#explore {
+    margin-top: 80px;
+}
+#exlore #explCon {
+    /* max-width: 00px; */
+}
+#explore .container .col-10 .row {
+    justify-content: center;
+}
+#explore .container .col-10 .card {
+    width: 13rem;
+    /* height: 15rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: none;
+    align-items: center;
+    text-align: center;
+}
+
+/*  */
+/* Other section */
+#other {
+    margin-top: 80px;
+}
+
+#other .container {
+    position: relative;
+}
+#other .container .row .sgh-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 98%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    display: none;
+}
+#other .container .row:hover .sgh-hero-overlay {
+    display: block;
+}   
+
+#other #btnWhole {
+    position: absolute;
+    text-align: center;
+    margin-top: -70px;
+    width: 100%;
+}
+#other #btnWhole #womenBtn {
+    margin-right: 300px;
+}
+#other #btnWhole #menBtn {
+    margin-left: 300px;
+}
+#other .shopBtn {
+    font-size: 0.97rem;
+    font-weight: 600;
+    border-radius: 100px;
+    color: white;
+    width: 120px;
+    padding: 5px;
+    background: radial-gradient(black, transparent);
+    border: none;
+    box-shadow: 0px -1px 2px rgb(223, 223, 223);
+}
+#other .shopBtn:hover {
+    background-color: rgb(20, 18, 18);
+    box-shadow: 0px -1px 2px rgb(98, 98, 98);
+}
+#other .container .row #btnWhole:hover .sgh-hero-overlay {
+    display: block;
+}
+
+/* Top Coll section */
+#topColl {
+    margin-top: 100px;
+}
+#topColl .container .row .col-4 .card{
+    border: none;
+    border-radius: 0px;
+}
+#topColl .container .row .col-4 .card .card-img-top {
+    cursor: pointer;
+}
+
+/* Shop by brand */
+#shopByBrand {
+    margin-top: 100px;
+}
+#shopByBrand .container .row .col-2 {
+    padding: 20px;
+}
+#shopByBrand .container .row .col-2 img {
+    height: 6rem;
+    width: 12rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#shopByBrand .container .row .col-2 img:hover {
+    opacity: 1;
+}
+
+/* Footer */
+#footer {
+    color: white;
+    background: #313030;
+}
+#footer p {
+    margin-left: 40px;
+}
+#footer ul li {
+    list-style: none;
+}
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#footer a:hover{
+    color: chartreuse;
+}
+#footer i {
+    font-size: 1.3rem;
+    padding: 4px; 
+}
+#footer i:hover {
+    color: #de0022;
+    cursor: pointer;
+}
+#footer hr {
+    background-color: white;
+    margin: 20px;
+}
+#footer #c_ryt {
+    text-align: center;
+    margin-top: -10px;
+}

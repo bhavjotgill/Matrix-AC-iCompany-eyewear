@@ -1,0 +1,245 @@
+body {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px;
+}
+/* Navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    position: sticky;
+    background-color: white;
+    top: 0px;
+}
+
+#logo img {
+    height: 50%;
+    width: 10%;
+    margin-left: 12px;
+}
+#navbar ul {
+    display: flex;
+}
+#navbar #logo img {
+    width: 140px;
+}
+#navbar::before {
+    content: "";
+    /* background-color: red; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;  /*remove underlines from li...... */
+    cursor: pointer;
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: rgb(10, 9, 9);
+    
+}
+#navbar #search {
+    position: relative;
+    border-radius: 50px;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    width: 219px;
+    margin-left: 125px;
+}
+#navbar #search input {
+    border-style: hidden;
+    text-align: center;
+    width: 155px;
+    color: chartreuse;
+    background-color: black;
+}
+
+#navbar #search input:focus{
+    outline: none;
+}
+#navbar #search input::placeholder {
+    color: white;
+}
+
+/*Font awesome icon search and mic*/
+#navbar #search #searchIcon {
+    color: white;
+}
+#navbar #search #micIcon {
+    color: white;
+    cursor: pointer;
+}
+
+#right-bt{
+    position: relative;
+    margin-left: 0px;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    /* border-left: 10px solid red; */
+    /* align-items: center; */
+}
+#home::before {
+    content: "";
+    background: url('acs/ac2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top: 75px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home p {
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 250px;
+    margin-top: 270px;
+    margin-bottom: 0px;
+    /* text-decoration: ; */
+}
+#home h1 {
+    color: white;
+    font-size: 4rem;
+    margin-left: 250px;
+    margin-top: 0px;
+}
+
+/* Sale section */
+#sale {
+    
+    /* width: 100%; */
+}
+
+#sale p {
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: black;
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    /* margin-left: -9px;
+    margin-right: -9px; */
+    z-index: -1;
+}
+#sale #countdown_timer {
+    font-style: italic;
+    /* color: #d0cecb; */
+}
+#sale #overall {
+    margin-top: 60px;
+}
+#sale #overall .over .box {   
+    border: 2px solid brown;
+    padding: 24px;
+    margin: 26px 50px;
+    border-radius: 25px;
+    width: 500px;
+    height: 200px;
+    background-color: #d0cecb;
+}
+#sale #overall .over  {
+    display: flex;
+    justify-content: center;
+}
+#sale #overall .over .box img {
+    border-radius: 15px;
+    height: 140px;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+}
+
+/* Our clients Section */
+#clients {
+    margin-top: 70px;
+}
+#clients h1 {
+    text-align: center;
+    font-size: 4.3rem;
+    margin-bottom: 25px;
+}
+#clients #all {
+    margin-left: 60px;
+}
+#clients #all .four {
+    display: flex;
+}
+#clients #all .four .item {
+    padding: 24px;
+    margin: 26px 50px;
+    /* border-radius: 25px; */
+    width: 200px;
+    /* height: 200px; */
+}
+#clients #all .four img {
+    height: 70px;
+}
+
+/* Footer Section */
+#footer {
+    color: white;
+    background: #313030;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+}
+#footer p {
+    margin-left: 40px;
+}
+#footer ul li {
+    list-style: none;
+}
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#footer #flaw {
+    justify-content: center;
+    display: flex;
+}
+#footer #flaw .abc {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#footer a:hover{
+    color: chartreuse;
+}
+/* #footer i:hover{
+    color: skyblue;
+} */
+#footer .abc i {
+    font-size: 1.3rem;
+    padding: 4px; 
+}
+#footer .abc i:hover {
+    color: #de0022;
+    cursor: pointer;
+}
+#footer hr {
+    background-color: white;
+    margin: 20px;
+}
+
+#footer #c_ryt {
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
